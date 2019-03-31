@@ -1,0 +1,49 @@
+bootstrap:
+	version: 4.1.3
+	css:
+		theme:
+			css/bootstrap.min.css: {}
+			css/bootstrap-theme.min.css: {}
+	js:
+		js/bootstrap.min.js : {}
+	dependencies:
+		- core/jquery
+
+base:
+	version: VERSION
+	css:
+		theme:
+			css/style.css: {}
+		js:
+			js/kal.js: {}
+		dependencies:
+			- core/jquery
+
+webfonts:
+	version: VERSION
+	css:
+		theme:
+			fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab: { type: external }
+			
+font-awesome:
+	version: 4.3.0
+	css:
+		theme:
+			include/font-awesome.min.css: {}			
+
+flexslider:
+	version: 2.5.0
+	css:
+		theme:
+			include/flexslider/flexslider.css: {}
+	js:
+		include/flexslider/jquery.flexslider-min.js: {}
+	dependencies:
+	- core/jquery
+	
+	scroll-to:
+		version: 2.1.1
+		js:
+			include/jquery-scrollTo/jquery.scrollTo.min.js: {}
+		dependencies:
+			- core/jquery
