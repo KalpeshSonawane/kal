@@ -1,0 +1,65 @@
+{#
+/**
+ * @file
+ * Default theme implementation for page titles.
+ *
+ * Available variables:
+ * - title_attributes: HTML attributes for the page title element.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('kal/flexslider') }}
+{{ attach_library('octo/scroll-to') }}
+<div class="layout-container">
+	<header class="header" role="banner">
+	<div class="header-top">
+		<div class="container">
+			{{ page.header_top }}
+		</div>
+	</div>
+	<div class="header-nav container">
+		{{ page.header}}
+		{{ page.primary_menu }}
+	</div>
+</header>
+<section id="section2" class="section">
+<div class="container">
+{{ page.before_content }}
+</div>
+</section>
+{{ page.highlighted }}
+{{ page.jumbotron }}
+{{ page.featured }}
+<div class="container main-footer">
+<div class="row">
+<div class="col-md-4">
+{{ page.footer_first }}
+</div>
+<div class="col-md-4">
+{{ page.footer_second }}
+</div>
+<div class="col-md-4">
+{{ page.footer_third }}
+</div>
+</div>
+</div>
+	
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					{{ page.footer_bottom_left }}
+				</div>
+				<div class="col-md-4">
+					{{ page.footer_bottom_right }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
